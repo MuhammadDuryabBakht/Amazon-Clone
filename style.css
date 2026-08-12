@@ -296,3 +296,35 @@ body{
     margin-right: 20px;
     padding: 7px;
 }
+
+
+
+/*------------------------Hero-Section----------------------*/
+
+
+
+.Hero-section{
+    height: 350px;
+    width: 100%;
+    max-width: 2000px;
+    /* border: 1px solid black; */
+    background-image: url(hero_img.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.hero{
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text a{
+    text-decoration: none;
+    font-weight: bold;
+}
