@@ -268,6 +268,10 @@ body{
         padding-left: 10px;
     }
 }
+
+
+/*------Pannel-Links------*/
+
 .panel-links{
     width: 40%;
     display: flex;
@@ -278,11 +282,14 @@ body{
         font-size: small;
         font-weight: bold;
         margin-left: 5px;
-        
     }
     margin-right: 460px;
     
 }
+
+
+/*------Pannel-Deals------*/
+
 .panel-deal{
     /* height: 80%; */
     font-weight: bold;
