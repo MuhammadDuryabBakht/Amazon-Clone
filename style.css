@@ -110,6 +110,9 @@ body{
     outline: none;
     font-weight: bold;
 }
+.search-option select:hover{
+    background-color:#c4c0c0 ;
+}
 .search-bar{
     width: 90%;
     height: 100%;
@@ -141,7 +144,7 @@ body{
     color: black;
 }
 .search-icon:hover{
-    background-color: #fab04e;
+    background-color: #f8a335;
 }
 
 
@@ -327,4 +330,33 @@ body{
 .hero-text a{
     text-decoration: none;
     font-weight: bold;
+}
+
+
+
+/*------------------------Menu-Section----------------------*/
+
+
+
+.menu{
+    width: 100%;
+    max-width: 2000px;
+    height: auto;
+    background-image: linear-gradient(to bottom,rgba(169, 56, 250),white);
+    padding-top: 30px;
+}
+.menu-list{
+    width: 100%;
+    height: auto;
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:50px;
+}
+.menu-item{
+    height: 350px;
+    border: 2px solid white;
+    margin: 0px 20px;
+    /* padding: 20px 0px; */
+    border-radius: 5%;   
 }
