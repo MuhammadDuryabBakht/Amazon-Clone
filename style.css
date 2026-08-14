@@ -326,6 +326,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 .hero-text a{
     text-decoration: none;
@@ -349,14 +350,143 @@ body{
     width: 100%;
     height: auto;
     display: grid;
-    padding-top: 10px;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap:50px;
+    padding-top: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(326px,1fr));
+    row-gap:50px;
 }
 .menu-item{
-    height: 350px;
-    border: 2px solid white;
+    height: 400px;
+    border: 2px solid rgb(82, 66, 66);
     margin: 0px 20px;
-    /* padding: 20px 0px; */
-    border-radius: 5%;   
+    padding: 5px 0px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    button{
+        background-color: white;
+        border: none;
+        font-size: large;
+        font-weight: bold;
+        color: rgba(169, 56, 250);
+    }
+}
+.menu-item button:hover{
+    transform: scale(1.1);
+    color: red;
+}
+.item1{
+    width: 90%;
+    height: 80%;
+}
+.item1-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(health_care_products.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.item2{
+    width: 90%;
+    height: 80%;
+}
+.item2-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(gaming_img.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.item3{
+    width: 90%;
+    height: 80%;
+}
+.item3-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(Home\ Appliances.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.item4{
+    width: 90%;
+    height: 80%;
+}
+.item4-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(fashion.jpg);
+    background-size: cover;
+    margin-bottom: 25px;
+}
+.item5{
+    width: 90%;
+    height: 80%;
+}
+.item5-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(books&Stationary.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.item6{
+    width: 90%;
+    height: 80%;
+}
+.item6-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(Gadgets&Electronics.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.item7{
+    width: 90%;
+    height: 80%;
+}
+.item7-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(HomeDecor.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.item8{
+    width: 90%;
+    height: 80%;
+}
+.item8-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(Outdoor&travel.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.item9{
+    width: 90%;
+    height: 80%;
+}
+.item9-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(Sports&Fitness.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+.item10{
+    width: 90%;
+    height: 80%;
+}
+.item10-pic{
+    width: 100%;
+    height: 85%;
+    background-image: url(Toys&baby.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
 }
