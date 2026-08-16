@@ -291,6 +291,35 @@ body{
     margin-right: 460px;
     
 }
+.panel-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--textcolor);
+  padding: 5px 0;
+}
+.panel-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;           /* just below the text */
+  width: 0%;
+  height: 2px;
+  background-color:white; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.panel-links a:hover::after {
+  width: 100%;            /* smoothly expands */
+}
+.panel-links a::after {
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.panel-links a:hover::after {
+  transform: scaleX(1);
+}
 
 
 /*------Pannel-Deals------*/
@@ -501,6 +530,8 @@ body{
 
 
 .footer-1{
+    width: 100%;
+    max-width: 2000px;
     height: 3.15rem;
     margin-top: 50px;
     background-color: #37475a;
@@ -518,4 +549,108 @@ body{
 .footer-1 a:hover{
     color: red;
     transform: scale(1.1);
+}
+
+
+/*---------------Footer-Links----------------*/
+
+.footer-2{
+    width: 100%;
+    max-width: 2000px;
+    height: 25rem;
+    background-color: #232f3e;
+    /* padding: 20px 0px; */
+    border-bottom: 2px solid white;
+}
+.foot2-links{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    /* justify-content: space-evenly; */
+    justify-items: center;
+    /* padding: 0px 50px; */
+    /* column-gap: 30px; */
+    color: var(--textcolor);
+    font-size: large;
+    a{
+        display: flex;
+        text-decoration: none;
+        color: var(--textcolor);
+        font-size: 0.85rem;
+        color:#dddddd;
+        padding: 10px 0px;
+    }
+}
+
+
+
+/*---------------Footer-Logo----------------*/
+
+
+.footer-3{
+    width: 100%;
+    max-width: 2000px;
+    height: 5rem;
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot3-content{
+    width: 10%;
+    height: 50%;
+    background-image: url(amazon-logo-removebg-preview.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/*---------------Footer-CopyRight----------------*/
+
+
+.footer-4{
+    width: 100%;
+    max-width: 2000px;
+    height: 6rem;
+    background-color: #131A22;
+    color: #dddddd;
+    text-align: center;
+}
+.pages{
+    a{
+        text-decoration: none;
+        color:#dddddd;
+        font-size: small;
+        margin-right: 10px;
+    }
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.copyright{
+
+    a{
+        text-decoration: none;
+        color:#dddddd;
+        font-size: small;
+    }
+}
+.myself{
+    margin-top: 10px;
+    p{
+        margin-right: 10px;
+        display: inline;
+        color:#dddddd ;
+        font-size: small;
+        font-weight: bold;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+.myself a:hover{
+    color: red;
+    font-weight: bold;
 }
